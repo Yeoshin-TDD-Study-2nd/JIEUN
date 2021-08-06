@@ -41,4 +41,20 @@ class FibonacciTests {
         assertEquals(1, fibonacci.getFibonacci(2));
     }
 
+    /**
+     * 피보나치 n번째: (피보나치 n - 1번째) + (피보나치 n - 2 번째)
+     */
+    @Test
+    void 피보나치_TDD_N번째() {
+        // 난수를 발생 ( 0 ~ 20 )
+        int random = (int)Math.random() * 21;
+
+        int fibo_1 = fibonacci.getFibonacci(random - 1);
+        int fibo_2 = fibonacci.getFibonacci(random - 2);
+
+        int expected_fibo = fibo_1 + fibo_2;
+
+        assertEquals(expected_fibo, fibonacci.getFibonacci(random));
+    }
+
 }
