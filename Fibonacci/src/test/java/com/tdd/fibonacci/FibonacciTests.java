@@ -23,4 +23,12 @@ class FibonacciTests {
         assertEquals(1, fibonacci.getFibonacci(1));
     }
 
+    /**
+     * 피보나치 2부턴
+     * 바로 앞 두 피보나치 수의 합
+     */
+    @Test
+    void 피보나치_TDD_2번째() {
+        assertEquals(1, fibonacci.getFibonacci(2));
+    }
 }
