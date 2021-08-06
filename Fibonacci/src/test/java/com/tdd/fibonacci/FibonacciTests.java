@@ -31,4 +31,14 @@ class FibonacciTests {
     void 피보나치_TDD_2번째() {
         assertEquals(1, fibonacci.getFibonacci(2));
     }
+
+    /**
+     * 피보나치 2번째: 피보나치 1번째 + 피보나치 0번째
+     * 이제 재귀로 들어가야함
+     */
+    @Test
+    void 피보나치_TDD_2번째는_재귀로() {
+        assertEquals(1, fibonacci.getFibonacci(2));
+    }
+
 }
